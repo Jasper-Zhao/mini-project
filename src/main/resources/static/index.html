@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeskFlow | Hot desk booking</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">Helsinki office</p>
+      <h1>Find your desk.</h1>
+      <p class="intro">Book a workspace for the day in a few clicks.</p>
+    </header>
+
+    <section class="controls" aria-label="Availability filters">
+      <label>Date <input id="date" type="date" required></label>
+      <label>Floor
+        <select id="floor"><option value="">All floors</option><option value="2">Floor 2</option><option value="3">Floor 3</option><option value="4">Floor 4</option></select>
+      </label>
+      <label>Monitor
+        <select id="monitor"><option value="">Any setup</option><option value="true">Monitor included</option><option value="false">No monitor</option></select>
+      </label>
+      <button id="refresh" type="button">Find desks</button>
+    </section>
+
+    <p id="notice" class="notice" role="status"></p>
+
+    <section>
+      <div class="section-heading"><h2>Available desks</h2><span id="availability-count"></span></div>
+      <div id="desks" class="desk-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="booking-panel" aria-labelledby="booking-title">
+      <h2 id="booking-title">Create a booking</h2>
+      <p id="selected-desk">Choose an available desk to get started.</p>
+      <form id="booking-form">
+        <label>Your name <input id="employee-name" maxlength="120" autocomplete="name" required disabled></label>
+        <button id="book" type="submit" disabled>Book desk</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="section-heading"><h2>Bookings for this date</h2><span id="booking-count"></span></div>
+      <div id="bookings" class="booking-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
