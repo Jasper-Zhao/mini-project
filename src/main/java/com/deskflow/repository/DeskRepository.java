@@ -1,5 +1,6 @@
-package com.deskflow.desk;
+package com.deskflow.repository;
 
+import com.deskflow.model.Desk;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;

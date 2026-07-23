@@ -1,4 +1,4 @@
-package com.deskflow.common;
+package com.deskflow.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

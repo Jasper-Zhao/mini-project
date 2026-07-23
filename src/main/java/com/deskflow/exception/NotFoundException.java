@@ -1,4 +1,4 @@
-package com.deskflow.common;
+package com.deskflow.exception;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String message) {

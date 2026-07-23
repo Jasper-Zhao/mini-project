@@ -1,7 +1,9 @@
-package com.deskflow.desk;
+package com.deskflow.service;
 
-import com.deskflow.common.BadRequestException;
-import com.deskflow.common.NotFoundException;
+import com.deskflow.exception.BadRequestException;
+import com.deskflow.exception.NotFoundException;
+import com.deskflow.model.Desk;
+import com.deskflow.repository.DeskRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

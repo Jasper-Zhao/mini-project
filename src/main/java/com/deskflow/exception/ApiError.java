@@ -1,4 +1,4 @@
-package com.deskflow.common;
+package com.deskflow.exception;
 
 import java.time.Instant;
 

@@ -1,5 +1,6 @@
-package com.deskflow.booking;
+package com.deskflow.repository;
 
+import com.deskflow.model.Booking;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;

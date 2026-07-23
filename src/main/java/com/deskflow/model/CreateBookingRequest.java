@@ -1,4 +1,4 @@
-package com.deskflow.booking;
+package com.deskflow.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

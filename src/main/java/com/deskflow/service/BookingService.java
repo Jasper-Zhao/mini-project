@@ -1,10 +1,12 @@
-package com.deskflow.booking;
+package com.deskflow.service;
 
-import com.deskflow.common.BadRequestException;
-import com.deskflow.common.ConflictException;
-import com.deskflow.common.NotFoundException;
-import com.deskflow.desk.Desk;
-import com.deskflow.desk.DeskService;
+import com.deskflow.exception.BadRequestException;
+import com.deskflow.exception.ConflictException;
+import com.deskflow.exception.NotFoundException;
+import com.deskflow.model.Booking;
+import com.deskflow.model.CreateBookingRequest;
+import com.deskflow.model.Desk;
+import com.deskflow.repository.BookingRepository;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 

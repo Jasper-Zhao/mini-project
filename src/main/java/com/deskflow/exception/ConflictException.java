@@ -1,4 +1,4 @@
-package com.deskflow.common;
+package com.deskflow.exception;
 
 public class ConflictException extends RuntimeException {
     public ConflictException(String message) {

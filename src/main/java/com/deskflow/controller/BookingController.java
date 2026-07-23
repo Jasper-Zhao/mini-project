@@ -1,5 +1,8 @@
-package com.deskflow.booking;
+package com.deskflow.controller;
 
+import com.deskflow.model.Booking;
+import com.deskflow.model.CreateBookingRequest;
+import com.deskflow.service.BookingService;
 import jakarta.validation.Valid;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
